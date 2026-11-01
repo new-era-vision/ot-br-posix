@@ -80,7 +80,7 @@ main()
         if [[ -n ${OTBR_TARGET[*]} ]]; then
             ninja "${OTBR_TARGET[@]}"
         else
-            ninja
+            ninja -j1
         fi
     )
 }
